@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7549ce3a-c4d3-479b-8ffa-448533d67843">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select * from penjualan,pelanggan,produk]]>
+	</queryString>
+	<field name="PenjualanID" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TanggalPenjualan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TotalHarga" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="PelangganID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NamaPelanggan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Alamat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NomorTelepon" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ProdukID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NamaProduk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Harga" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Stok" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="109" splitType="Stretch">
+			<staticText>
+				<reportElement x="153" y="22" width="250" height="42" uuid="0d78b39e-34b3-4a79-bfc7-2ad03f946c8c"/>
+				<textElement>
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CETAK LAPORAN]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="4" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="330" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="8d1a5946-432a-42a3-8dcb-5b97cb994fc5"/>
+				<text><![CDATA[ID PENJUALAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="76" width="100" height="20" uuid="71d8cb4d-049c-4027-8ec4-2539f66dc6d6"/>
+				<text><![CDATA[ALAMAT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="112" width="100" height="20" uuid="680fe1b9-b9ee-45dd-9b67-fb5b923a0d5a"/>
+				<text><![CDATA[NO TLEP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="0" width="100" height="20" uuid="10ec9508-5e30-4b06-95c5-4544a33e4a84"/>
+				<text><![CDATA[ID PELANGGAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="41" width="100" height="20" uuid="54558c49-4990-4178-b257-40a7036fe6ee"/>
+				<text><![CDATA[TANGGAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="41" width="100" height="20" uuid="416f6773-7bfa-47b6-8e18-007338e30655"/>
+				<text><![CDATA[NAMA PELANGGAN]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="116" y="0" width="100" height="20" uuid="690da5ad-29e2-46cb-bbe6-3b21e499ad5e"/>
+				<textFieldExpression><![CDATA[$F{PenjualanID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="116" y="41" width="100" height="20" uuid="75798834-281b-463d-9ec9-7afa4d3fc5a0"/>
+				<textFieldExpression><![CDATA[$F{TanggalPenjualan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="415" y="0" width="100" height="20" uuid="95180820-1553-4ebe-9e83-bed8b437a4c9"/>
+				<textFieldExpression><![CDATA[$F{PelangganID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="415" y="41" width="100" height="20" uuid="f066adba-7d8b-4f4a-b1bb-9df76233d15b"/>
+				<textFieldExpression><![CDATA[$F{NamaPelanggan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="415" y="76" width="100" height="20" uuid="efeb4882-6b09-4d8a-99c9-3095757085da"/>
+				<textFieldExpression><![CDATA[$F{Alamat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="415" y="112" width="100" height="20" uuid="eb1b5008-0715-44d6-a06b-34e9cd75ee1b"/>
+				<textFieldExpression><![CDATA[$F{NomorTelepon}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="150" width="100" height="20" uuid="d4a3e966-0818-426b-b6d6-45055c577179"/>
+				<text><![CDATA[NAMA PRODUK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="150" width="100" height="20" uuid="15e46633-7089-40d2-94ea-9e94f80928dd"/>
+				<text><![CDATA[         HARGA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="393" y="154" width="100" height="20" uuid="d8c082f2-5ea5-4a1a-a558-edb12b0ceccd"/>
+				<text><![CDATA[    TOTAL HARGA]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="186" width="100" height="20" uuid="87ccee91-c2d0-4ffc-8376-557b455055b0"/>
+				<textFieldExpression><![CDATA[$F{NamaProduk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="141" y="186" width="100" height="20" uuid="5e966c79-65cb-42a4-a063-6b48211e6c0a"/>
+				<textFieldExpression><![CDATA[$F{Harga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="393" y="186" width="100" height="20" uuid="ea54a039-ff3d-4932-801d-70f3ff62532e"/>
+				<textFieldExpression><![CDATA[$F{TotalHarga}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
